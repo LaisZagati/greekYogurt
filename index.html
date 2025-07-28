@@ -102,10 +102,22 @@
        across the country.
     </p>
     <a href="https://www.bbcgoodfood.com/health/nutrition/greek-yogurt-healthy" target="_blank">Learn more about its benefits</a> 
-    <button>👉 Buy Greek Yogurt Now</button>
+    <button class="buy-button"> 👉 Buy Greek Yogurt Now</button>
     <p class="footer"> 
         &copy; 2025 Greek Yogurt Lovers. All rights reserved.
     </p>
    </div>
+   <script>
+        function buy() {
+            let name = prompt("Please enter your name:");   
+            let email = prompt("Please enter your email address:");
+
+            alert(`Thank you, ${name}! We'll be in touch by email, meanwhile have a lot of Yogurt!`)
+        }
+
+       let buyButton = document.querySelector('.buy-button');
+       buyButton.addEventListener('click', buy);
+
+   </script>
  </body>
 </html>
